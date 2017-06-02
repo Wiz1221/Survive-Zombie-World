@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Survive Zombie World</title>
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="try.css" rel="stylesheet" type = "text/css" />
+</head>
+
+<body>
+  <div id="container">
+    <div class="hero" id= "hero1"></div>
+    <div class="hero" id= "hero2"></div>
+    <div class = "info" id="infoLeft">
+      <h4>Turn: <span id="turnCount"></span></h4>
+      <section>
+        <p>designer's note: </p>
+        <p id="designerMessage"></p>
+      </section>
+    </div>
+    <div class = "info" id="infoRight">
+      <h4>Controls</h4>
+      <section>
+        <p>space : start game</p>
+        <p> up, down, left,right: movement</p>
+        <p>a : attack </p>
+        <p>enter: next turn</p>
+        <p>c : close pop up box</p>
+      </section>
+
+    </div>
+
+    <div class= "item"></div>
+    <div id="promptScreen" style="height: 200px; width:300px; top:250px; left:500px; color:white;"><span id="itemInfoTop" style="position:relative; top: 20px; width:300px; height: 30px; margin: 10px;"></span></br><span id="itemName" style="position:relative; top: 25px; width:300px; height: 50px; font-size: 30px; margin: 10px;"></span></br><span id="itemInfoBottom" style="position:absolute; top: 80px; width:300px; height: 30px; margin: 10px;"></span></div>
+
+
+  </div>
+
+    <div id="explosion" style="display:none; height: 50px; width: 50px; position: absolute; top: 42px; left: 690px; z-index:6"></div>
+    <audio id="mainMusic" autoplay="" controls="" loop="" preload="">
+      <source src="./audio/Hero_s_Theme.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="explosionMusic" autoplay="" controls="" loop="" preload="">
+      <source src="./audio/Big_Explosion_Cut_Off.mp3" type="audio/mpeg">
+    </audio>
+  <script src="Monster.js"></script>
+  <script src="player1.js"></script>
+  <script src="player2.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

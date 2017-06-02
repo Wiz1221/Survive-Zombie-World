@@ -1,0 +1,105 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+ div{
+   display: inline;
+   position: absolute;
+}
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+#hero1 {
+  position: absolute;
+  z-index: 1;
+}
+
+#hero2 {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 832px;
+  left: 712px;
+  z-index: 1;
+}
+
+.promptScreen {
+  display: none;
+  position: absolute;
+  border: 5px solid rgba(255,255,255,0.5);
+  border-radius: 10px;
+  background-color: rgba(51, 51, 255,0.7);
+  height: 200px;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -150px;
+}
+
+/*.promptScreen>p{
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  z-index: 101;
+}*/
+
+.monster {
+  background-image: url("./assets/Monster1.png");
+  background-size: 100% 100%;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  z-index: 1;
+}
+
+.info{
+  height: auto;
+  width: 200px;
+  position: absolute;
+  display: inline-block;
+}
+
+#infoLeft{
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  top: 25%;
+  left: 32px;
+  width: 200px;
+}
+
+#infoRight{
+  font-size: 20px;
+  font-family: 'Architects Daughter', cursive;
+  top: 25%;
+  left: 1150px;
+}
+
+#designerMessage{
+  width:100px;
+}
+
+@keyframes rotateDownLeft {
+  from {
+    transform-origin: left bottom;
+    transform: none;
+  }
+
+  to {
+    transform-origin: left bottom;
+    transform: rotate3d(0, 0, 1, 45deg);
+  }
+}
+
+.rotateDownLeft {
+  animation-name: rotateDownLeft;
+}
+
+audio{
+  display:none;
+}
