@@ -632,7 +632,7 @@ function collideWithMonster(a,b,c,d,range){
   if(playerTop >= monsterTop &&  playerTop <=( monsterTop + range) && playerLeft >= monsterLeft && playerLeft  <= (monsterLeft + range)){
 
     promptScreenToggle("block","rgba(255, 0, 0,0.7)","The zombies caught you!","YOU HAVE DIED", "Thanks for playing! "+ "\n"+"press space to play again");
-    endGame = true;
+    setTimeout(function(){endGame = true;},20);
   }
 }
 
